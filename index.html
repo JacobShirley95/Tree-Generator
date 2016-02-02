@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Tree Generator</title>
+        
+        <!-- Load jQuery library -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+        <!-- Load jQuery UI library -->
+        <link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+        <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+        <!-- Load jQuery Colorpicker library -->
+        <link rel="stylesheet" href="bower_components/colorpicker/jquery.colorpicker.css">
+        <script src="bower_components/colorpicker/jquery.colorpicker.js"></script>
+
+        <!-- Load my stylesheet -->
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
+	</head>
+	<body>
+		<canvas id="tree-canvas"></canvas>
+
+		<div id="right-panel" class="panel">  
+		  <div id="controls" class="sub-panel">
+		    <div id="generate-clear">
+		      <div id="generate" class="particle-btn button">
+		        Generate
+		      </div>
+		      <div id="clear" class="particle-btn button">
+		        Clear
+		      </div>
+		    </div>
+		    <div id="sliders">
+		      <div id="x-slider" title="X"></div>
+		      <div id="y-slider" title="Y"></div>
+		      <div id="segment-slider" title="Segments"></div>
+		      <div id="start-angle-slider" title="Start angle"></div>
+		      <div id="inc-angle-slider" title="Increment angle"></div>
+		      <div id="random-angle-slider" title="Random devation angle"></div>  
+		      <div id="trunk-length-slider" title="Trunk length"></div>
+		      <div id="start-line-width-slider" title="Start line width"></div>
+		      <div id="leaf-colour-start-slider" title="Leaf colour start"></div>
+		      
+		     <div class="slider-comp">
+		      <div class="slider-title">
+		        Leaf colour
+		      </div>
+		      <input type="text" id="leaf-colour-box" class="colour-box" value="fe9810">
+		    </div> 
+		    
+		    <div class="slider-comp">
+		      <div class="slider-title">
+		        Trunk colour
+		      </div>
+		      <input type="text" id="trunk-colour-box" class="colour-box" value="fe9810">
+		    </div> 
+		  </div> 
+		</div>
+
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
